@@ -1,0 +1,137 @@
+USE [DigitalCash]
+GO
+
+/****** Object:  Table [dbo].[DC_AddressInformation]    Script Date: 05/16/2013 22:10:59 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DC_AddressInformation](
+	[DCID] [int] NULL,
+	[Address] [nvarchar](50) NULL,
+	[DoorNo] [nvarchar](50) NULL,
+	[StreetName] [nvarchar](50) NULL,
+	[Area] [nvarchar](50) NULL,
+	[City] [nvarchar](50) NULL,
+	[District] [nvarchar](50) NULL,
+	[State] [nvarchar](50) NULL,
+	[Pincode] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+
+USE [DigitalCash]
+GO
+
+/****** Object:  Table [dbo].[DC_Bank]    Script Date: 05/16/2013 22:11:20 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DC_Bank](
+	[DCID] [nvarchar](50) NULL,
+	[BankName] [nvarchar](50) NULL,
+	[AccountNo] [nvarchar](50) NULL,
+	[Balance] [int] NULL,
+	[Pin] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+
+USE [DigitalCash]
+GO
+
+/****** Object:  Table [dbo].[DC_Contacts]    Script Date: 05/16/2013 22:11:32 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DC_Contacts](
+	[DCID] [nvarchar](20) NOT NULL,
+	[Name] [nvarchar](50) NULL,
+	[Address] [nvarchar](500) NULL,
+	[Mobile] [nvarchar](50) NULL,
+	[EmailID] [nvarchar](50) NULL,
+	[CustomerDCID] [nvarchar](20) NULL
+) ON [PRIMARY]
+
+GO
+
+USE [DigitalCash]
+GO
+
+/****** Object:  Table [dbo].[DC_CustomerMaster]    Script Date: 05/16/2013 22:11:42 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DC_CustomerMaster](
+	[FirstName] [nvarchar](50) NULL,
+	[MiddleName] [nvarchar](50) NULL,
+	[LastName] [nvarchar](50) NULL,
+	[Dependent] [nvarchar](50) NULL,
+	[DFirstName] [nvarchar](50) NULL,
+	[DLastName] [nvarchar](50) NULL,
+	[DOB] [datetime] NULL,
+	[Gender] [nvarchar](50) NULL,
+	[Country] [nvarchar](50) NULL,
+	[MFirstName] [nvarchar](50) NULL,
+	[MLastName] [nvarchar](50) NULL,
+	[MartialStatus] [nvarchar](50) NULL,
+	[DCID] [int] NOT NULL,
+	[Password] [nvarchar](50) NULL,
+	[MobileNo] [nvarchar](50) NULL,
+	[Emailid] [nvarchar](50) NULL,
+	[PanNo] [nvarchar](50) NULL,
+	[AadhaarNo] [nvarchar](50) NULL,
+	[PassportNo] [nvarchar](50) NULL,
+	[LicenseNo] [nvarchar](50) NULL,
+	[EduQuali] [nvarchar](50) NULL,
+	[Degree] [nvarchar](50) NULL,
+	[Employment] [nvarchar](50) NULL,
+	[AnnualIncome] [int] NULL,
+	[Activation] [int] NULL,
+	[PIN] [int] NULL,
+	[Amount] [int] NULL,
+	[OpeningDate] [datetime] NULL,
+	[DailyLimit] [int] NULL,
+	[LastIT] [datetime] NULL,
+ CONSTRAINT [PK2_DC_CustomerMaster] PRIMARY KEY CLUSTERED 
+(
+	[DCID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+INSERT INTO [DC_CustomerMaster]([DCID]) values (1);
+USE [DigitalCash]
+GO
+
+/****** Object:  Table [dbo].[DC_Transaction]    Script Date: 05/16/2013 22:11:54 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DC_Transaction](
+	[TID] [int] IDENTITY(1,1) NOT NULL,
+	[FromDCID] [nvarchar](50) NULL,
+	[ToDCID] [nvarchar](50) NULL,
+	[Amount] [int] NULL,
+	[DOT] [datetime] NULL,
+	[Narration] [nvarchar](max) NULL
+) ON [PRIMARY]
+
+GO

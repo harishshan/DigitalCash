@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Digital cash system
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                
+                <asp:Label ID="lblWelcome" runat="server"></asp:Label>
+                <asp:Label ID="lblDCID" runat="server"></asp:Label>
+                &nbsp;&nbsp;
+                <asp:LinkButton ID="lbLogout" runat="server" CausesValidation="False" 
+                    onclick="lbLogout_Click" Visible="False">Logout</asp:LinkButton>
+                <%--<asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>--%>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Index.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/AccountSummary.aspx" Text="Account Summary" Value="Account Summary"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/CashTransfer.aspx" Text="Cash Transfer" 
+                            Value="Cash Transfer"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Contacts.aspx" Text="Contacts" Value="Contacts">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Transactions.aspx" Text="Transactions" 
+                            Value="Transactions"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Change Credentials.aspx" Text="Change Credentials" 
+                            Value="Change Credentials"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/IncomeTaxGeneration.aspx" 
+                            Text="IncomeTax Generations" Value="IncomeTax Generations"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Make Ditial Cash.aspx" Text="Make Digital Cash" 
+                            Value="Make Digital Cash"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" Value="About">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<states>
+  <state code="AP" name="Andhra Pradesh" />
+  <state code="AR" name="Arunachal Pradesh" />
+  <state code="AS" name="Assam" />
+  <state code="BR" name="Bihar" />
+  <state code="CT" name="Chhatisgarh" />
+  <state code="GA" name="Goa" />
+  <state code="GJ" name="Gujarat" />
+  <state code="HR" name="Haryana" />
+  <state code="HP" name="Himachal Pradesh" />
+  <state code="JK" name="Jammu and Kashmir" />
+  <state code="JH" name="Jharkhand" />
+  <state code="KA" name="Karnataka" />
+  <state code="KL" name="Kerala" />
+  <state code="MP" name="Madhya Pradesh" />
+  <state code="MH" name="Maharastra" />
+  <state code="MN" name="Manipur" />
+  <state code="ML" name="Meghalyaa" />
+  <state code="MZ" name="Mizoram" />
+  <state code="NL" name="Nagaland" />
+  <state code="OR" name="Orissa" />
+  <state code="PB" name="Punjab" />
+  <state code="RJ" name="Rajastan" />
+  <state code="SK" name="Sikkim" />
+  <state code="TN" name="Tamil Nadu" />
+  <state code="TR" name="Triupura" />
+  <state code="UT" name="Uttaranchal" />
+  <state code="UP" name="Uttar Pradesh" />
+  <state code="WB" name="West Bengal" />
+</states>

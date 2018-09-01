@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DigitalCash1", "DigitalCash\", "{61062096-475E-461F-89C1-0344574A455A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/DigitalCash1"
+		Debug.AspNetCompiler.PhysicalPath = "E:\Digital Cash using Highsecured Middleware\Project\DigitalCash1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\DigitalCash1\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/DigitalCash1"
+		Release.AspNetCompiler.PhysicalPath = "E:\Digital Cash using Highsecured Middleware\Project\DigitalCash1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\DigitalCash1\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54688"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61062096-475E-461F-89C1-0344574A455A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61062096-475E-461F-89C1-0344574A455A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
