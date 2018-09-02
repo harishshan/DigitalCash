@@ -1,0 +1,23 @@
+Need of a payment system which enables the electronic transactions is growing at the
+same time that the use of Internet is growing in our daily life. Present days electronic
+payment systems have a major problem they cannot handle the security and the users
+anonymity at the same time Digital cash systems are secure on the cost of their users anonymity.
+ Digital cash is a payment system which enables a secure  transaction without revealing the payers identity. 
+Digital cash can be used since it is portable and at the same time offers the ability of electronic transactions. 
+This report explains the concept of digital cash and discusses its properties. It shows how
+a digital cash system can be formed by presenting a few of the present days digital cash
+systems in details
+
+
+Blind signatures make anonymity a reality in digital cash systems. However, when
+, blind signatures raise such drawbacks as eCash deployed in digital cash systems such as 
+bad scalability and unfair anonymity. In this thesis, efforts have been done to combine
+ to build a NetCash digital signatures and a mechanism called “money-exchange” found in 
+new digital cash system. In the new system, two forms of digital cash are introduced:
+digital notes and digital coins. “Money-exchange” is extended to permit cash exchange
+from one form to the other. At the side of the digital cash issuer, at least two databases
+double-spending. The new digital cash system is secure due to its are maintained to detect 
+deployment of both symmetric and asymmetric encryption algorithms. The combination
+of blind signatures and the extended money-exchange mechanism offers unconditional
+and fair anonymity, and it makes the system more scalable with the regards to the number
+of clients served.
